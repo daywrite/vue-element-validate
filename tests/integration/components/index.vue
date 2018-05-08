@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-hello v-validate type="text" name="fname" value="" ／>
+    <input v-hello v-validate v-model="modelValue" type="text" name="fname" value="" ／>
   </div>
 </template>
 
@@ -8,7 +8,8 @@
   export default {
     data () {
       return {
-        count: 0
+        count: 0,
+        modelValue: 1
       }
     }
   }

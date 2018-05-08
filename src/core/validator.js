@@ -10,7 +10,8 @@ export default class Validator {
   }
 
   attach (fileld) {
-    this.errors = this._validate()
+    const value = fileld.initialValue
+    this.errors = validatorResult(true, value, [])
     return fileld
   }
 }
