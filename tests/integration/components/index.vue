@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-hello type="text" name="fname" value="" ／>
+    <input v-hello v-validate type="text" name="fname" value="" ／>
   </div>
 </template>
 
