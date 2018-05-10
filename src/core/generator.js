@@ -5,6 +5,7 @@ export default class Generator {
       el: el,
       binding: binding,
       vnode: vnode,
+      initial: !!binding.modifiers.initial,
       initialValue: Generator.resolveInitialValue(vnode) // 件的默认值
     }
   }

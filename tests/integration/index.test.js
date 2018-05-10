@@ -13,5 +13,5 @@ test('v-hello', async () => {
   expect(wrapper.vm.count).toEqual(0)
   expect(input.value).toEqual('hello')
   expect(wrapper.vm.$validator).toBeDefined()
-  expect(wrapper.vm.$validator.errors.id).toBe(1)
+  expect(wrapper.vm.$validator.errors.id).toBe('1')
 })
